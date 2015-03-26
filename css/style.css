@@ -1,72 +1,176 @@
+body{
+    margin: 0;
+}
+h1{
+    font-family: 'Architects Daughter', cursive;
+    font-size: 40px;
+    text-align: center;
+    color: #540b05
+;
+}
+p{
+    font-family: 'Arimo', sans-serif;
+    line-height: 2;
+}
+span{
+    color: white;
+;
+}
 .container{
-	width:1000px;
-	margin: 0 auto;
+    width: 1000px;
+    margin: 0 auto;
+
 }
 
+.container-main{
+    width: 500px;
+    float: right;
+}
+/*====== Header ======*/
+/*====================*/
 header{
-	width:1000px;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background-color: #540b05 
+;
+    border-bottom: 10px solid #540b05
+;
 }
-
-nav{ 
-	background-color: #3e7ca5;
-	padding: 20px;
-	margin-bottom: 5px;
+.logo{
+    float: left;
+    display: inline-block;
 }
-
-nav ul {
-	text-align: center;
-	padding: 0;
+.logo a{
+    font-family: 'Architects Daughter', cursive;
+    font-size: 35px;
+    font-weight: 700;
+    text-decoration: none;
+    text-shadow: 2px 2px 2px #b62f33;
+    color: white;
 }
-
+nav{
+    float: right;
+}
+nav ul{
+    padding-left: 0px;
+}
 nav ul li{
-	list-style-type: none;
-	display:inline;
-	margin: 0 15px;
+    display: inline-block;
+    padding: 0px 20px;
+}
+nav ul li a{
+    font-family: 'Architects Daughter', cursive;
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px 2px white;
+}
+nav ul li a:hover{
+    color: black;
+    text-shadow: 2px 2px 2px white;
+}
+/*====== index.html ======*/
+/*========================*/
+
+main{
+    margin-bottom: 40px;
 }
 
-a:link {
-	text-decoration: none;
-	color:#fff;
+main img{
+
+    height: 350px;
+    width: 350px; 
+    display: inline-block;
 }
 
-a:visited {
-	color:#000;
+.slider{
+  margin:117px 0px 0px 0px;
+  width:350px;
+  height:350px;
+  overflow:hidden;
+  border:10px solid;
+  border-top-color:#856036;
+  border-left-color:#5d4426;
+  border-bottom-color:#856036;
+  border-right-color:#5d4426;
+  position:relative;
+  display:inline-block;
+
+}
+.photo{
+  position: fixed;
+  animation:round 8s infinite;
+  opacity:0;
+  
+}
+@keyframes round{   
+  25%{opacity:1;}
+  40%{opacity:0;}
+} 
+
+
+img:nth-child(2){animation-delay:0s;}
+img:nth-child(1){animation-delay:4s;}
+
+/*====== articles.html ======*/
+/*===========================*/
+article, section {
+    width: 550px;
+    margin-bottom: 40px;
+    position: relative;
+    float: left;
+}
+article img{    
+width: 550px;
+margin-top: 48px;
+}
+article ul{
+    font-family: 'Architects Daughter', cursive;
+}
+aside{
+    width: 350px;
+    float: right;
+    background-color: #540b05;
+    padding: 20px;
+    position: relative;
+    top: 33px;
+    color: white;
+    margin-bottom: 40px;
 }
 
-a:hover {
-	color: #999;
-}
+aside span {
+    color: #b62f33;
+    font-weight: 700;
 
-a:active {
-	color: #CC3300;
 }
+header h2, aside h2{
+    font-family: 'Architects Daughter', cursive;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+}
+/*====== contact.html ======*/
+/*==========================*/
 
-.top {
-	border: 2px solid #000000;
-	width: 500px;
-	height: 500px;
-	float: left;
-	padding: 5px;
-	margin-bottom: 10px;
-}
 
-.bottom {
-	border: 2px solid #000000;
-	width: 500px;
-	height: 200px;
-	float: left;
-	padding: 5px;
-}
 
-aside {
-	width: 300px;
-	height: 700px;
-	background-color: #3e7ca5;
-	float: right;
-	padding: 5px;
-}
 
-footer {
-	clear:both;
-	padding: 5px;
+
+
+/*====== Footer ======*/
+/*====================*/
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+   
+    clear: both;
 }
+footer p{
+    text-align: center;
+    color: black;
+} 
